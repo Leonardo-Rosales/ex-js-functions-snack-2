@@ -19,3 +19,15 @@ console.log(sommaArrow(3, 5));
 
 const quadrato = (number) => number ** 2;
 console.log(quadrato(5));
+
+//snack 3
+
+const sottrazzione = (a, b) => a - b;
+const divisione = (a, b) => a / b;
+const moltiplicazione = (a, b) => a * b;
+
+const eseguiOperazione = (a, b, operazione) => operazione(a, b);
+
+console.log(eseguiOperazione(9, 3, sottrazzione));
+console.log(eseguiOperazione(9, 3, divisione));
+console.log(eseguiOperazione(9, 3, moltiplicazione));
