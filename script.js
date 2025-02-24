@@ -83,4 +83,19 @@ function eseguiEferma(messaggio, tempoAvvio, tempoStop) {
   }, tempoAvvio);
 }
 
-eseguiEferma('Leonardo', 2000, 6000);
+// eseguiEferma('Leonardo', 2000, 6000);
+
+//snack 8
+
+function contoAllaRovescia(n) {
+  const intervallo = setInterval(() => {
+    console.log(n);
+    n--;
+    if (n === 0) {
+      clearInterval(intervallo);
+      console.log('tempo scaduto');
+    }
+  }, 1000);
+}
+
+contoAllaRovescia(5);
