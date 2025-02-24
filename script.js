@@ -31,3 +31,13 @@ const eseguiOperazione = (a, b, operazione) => operazione(a, b);
 console.log(eseguiOperazione(9, 3, sottrazzione));
 console.log(eseguiOperazione(9, 3, divisione));
 console.log(eseguiOperazione(9, 3, moltiplicazione));
+
+//snack 4
+
+function creaTimer() {
+  setTimeout(() => {
+    console.log('Tempo scaduto!');
+  }, 3000);
+}
+
+creaTimer();
