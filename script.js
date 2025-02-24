@@ -40,7 +40,7 @@ function creaTimer() {
   }, 1000);
 }
 
-creaTimer();
+// creaTimer();
 
 //snack 5
 
@@ -98,4 +98,31 @@ function contoAllaRovescia(n) {
   }, 1000);
 }
 
-contoAllaRovescia(5);
+// contoAllaRovescia(5);
+
+//snack 9
+
+function sequenzaOperazioni(operazioni, intervallo) {
+  let indice = 0;
+
+  const eseguiOperazione = () => {
+    if (indice < operazioni.length) {
+      operazioni[indice]();
+
+      indice++;
+
+      setTimeout(eseguiOperazione, intervallo);
+    }
+  };
+
+  eseguiOperazione();
+}
+
+sequenzaOperazioni(
+  [
+    () => console.log('Operazione 1'),
+    () => console.log('Operazione 2'),
+    () => console.log('Operazione 3'),
+  ],
+  2000
+);
