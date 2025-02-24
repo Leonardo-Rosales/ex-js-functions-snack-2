@@ -37,7 +37,22 @@ console.log(eseguiOperazione(9, 3, moltiplicazione));
 function creaTimer() {
   setTimeout(() => {
     console.log('Tempo scaduto!');
-  }, 3000);
+  }, 1000);
 }
 
 creaTimer();
+
+//snack 5
+
+function stampaOgniSecondo() {
+  let contatore = 0;
+  const intervallo = setInterval(() => {
+    console.log('ciao');
+    contatore++;
+    if (contatore >= 4) {
+      clearInterval(intervallo);
+    }
+  }, 1000);
+}
+
+stampaOgniSecondo();
