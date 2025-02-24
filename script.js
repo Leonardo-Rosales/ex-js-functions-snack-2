@@ -55,4 +55,32 @@ function stampaOgniSecondo() {
   }, 1000);
 }
 
-stampaOgniSecondo();
+// stampaOgniSecondo();
+
+//snack 6
+
+function creaContatoreAutomatico() {
+  let contatore = 0;
+  setInterval(() => {
+    contatore++;
+    console.log(contatore);
+  }, 1000);
+}
+
+// creaContatoreAutomatico();
+
+//snack 7
+
+function eseguiEferma(messaggio, tempoAvvio, tempoStop) {
+  setTimeout(() => {
+    const intervallo = setInterval(() => {
+      console.log(messaggio);
+    }, 1000);
+
+    setTimeout(() => {
+      clearInterval(intervallo);
+    }, tempoStop);
+  }, tempoAvvio);
+}
+
+eseguiEferma('Leonardo', 2000, 6000);
